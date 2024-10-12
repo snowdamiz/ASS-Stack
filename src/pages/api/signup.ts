@@ -3,6 +3,7 @@ import { randomBytes } from "crypto"
 import { hash } from "@node-rs/argon2"
 import { getDb } from "@/utils/db"
 import { users, sessions } from "@/models/schema"
+import { validateEmail, validatePassword } from "@/lib/helpers"
 
 export async function POST(context: APIContext): Promise<Response> {
   const db = getDb()
@@ -12,7 +13,7 @@ export async function POST(context: APIContext): Promise<Response> {
 
     // Validate email
     const email = formData.get("email")
-    if (typeof email !== "string") {
+    if (typeof email !== "string" || !validateEmail(email)) {
       return new Response(JSON.stringify({ error: "Invalid email" }), {
         status: 400,
       })
@@ -20,7 +21,7 @@ export async function POST(context: APIContext): Promise<Response> {
 
     // Validate password
     const password = formData.get("password")
-    if (typeof password !== "string") {
+    if (typeof password !== "string" || !validatePassword(password)) {
       return new Response(JSON.stringify({ error: "Invalid password" }), {
         status: 400,
       })
