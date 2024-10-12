@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --primary-one: #FF8686;
+    --primary-two: #89D5FF;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-gradient-to-r from-primaryOne to-primaryTwo;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,29 @@
+---
+import SplashLayout from '@/layouts/Splash.astro'
+
+const user = Astro.locals.user
+if (!user) {
+	return Astro.redirect("/login")
+}
+---
+
+<SplashLayout title="CLASS Stack">
+  <div class="flex justify-center flex-col items-center w-[calc(100%-32px)] h-[calc(100%-32px)] fixed rounded-xl bg-white">
+    <form method="post" action="/api/logout">
+			<button>Sign out</button>
+		</form>
+  </div>
+</SplashLayout>
+
+<script>
+	document.forms[0].addEventListener("submit", async (e) => {
+		e.preventDefault()
+		const formElement = e.target as HTMLFormElement
+
+		await fetch(formElement.action, {
+			method: formElement.method,
+		})
+
+		window.location.href = "/login"
+	})
+</script>
