@@ -45,6 +45,7 @@ Unleash your side projects or startups with the ASS stack – the ultimate arse-
 - **Node.js**: v16 or later
 - **Docker**: v20 or later
 - **Docker Compose**: v1.29 or later
+- **NPX**: latest
 
 ## Installation
 
