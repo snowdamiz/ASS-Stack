@@ -5,7 +5,7 @@
 Unleash your side projects or startups with the ASS stack – the ultimate arse-enal for rapid development. Say goodbye to tedious boilerplate and hello to a kickass foundation where the hard choices are already made for you. It’s not fully polished, but who needs perfection when you’re building something epic? Dive in, experiment, and use at your own risk. Let’s get your ideas off the ground with some serious attitude.
 
 ### Out of the Box
-- [x] Database, backed up automatically to any S3 bucket via Litestream (Amazon S3, Cloudflare R2, etc)
+- [x] Database, replicated and backed up automatically to any S3 bucket via Litestream (Amazon S3, Cloudflare R2, etc)
 - [x] Basic session based authentication. (switching to 0Auth or 2fa highly recommended)
 - [x] Already Dockerized
 - [ ] Coolify deploy script
