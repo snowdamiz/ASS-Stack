@@ -36,7 +36,7 @@ Unleash your side projects or startups with the ASS stack – the ultimate arse-
 - **Front-end**: Astro, Vue.js, Tailwind CSS
 - **Back-end**: Node.js, SQLite, Drizzle ORM
 - **Deployment**: Docker, Docker Compose, Litestream
-- **Utilities**: Coolify, Shadcn UI components
+- **Utilities**: Coolify
 
 ## Prerequisites
 
