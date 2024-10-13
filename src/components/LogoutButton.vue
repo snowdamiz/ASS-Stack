@@ -10,26 +10,19 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
 const handleLogout = async () => {
   try {
-    const response = await fetch('/api/logout', {
+    await fetch('/api/logout', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-    });
+    })
 
-    if (response.ok) {
-      window.location.href = '/login';
-    } else {
-      // TODO: Add toast
-      console.error('Logout failed');
-    }
+    window.location.href = '/login'
   } catch (error) {
     // TODO: Add toast
-    console.error('An error occurred during logout:', error);
+    console.error('An error occurred during logout:', error)
   }
 }
 </script>

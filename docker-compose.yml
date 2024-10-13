@@ -1,5 +1,5 @@
 services:
-  class-stack:
+  ass-stack:
     build:
       context: .
       dockerfile: Dockerfile
