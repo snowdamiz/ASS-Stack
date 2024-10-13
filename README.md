@@ -1,5 +1,7 @@
 # The ASS Stack
 
+> **Dependencies checked and updated: Oct 12, 20204**
+
 Unleash your side projects or startups with the ASS stack – the ultimate arse-enal for rapid development. Say goodbye to tedious boilerplate and hello to a kickass foundation where the hard choices are already made for you. It’s not fully polished, but who needs perfection when you’re building something epic? Dive in, experiment, and use at your own risk. Let’s get your ideas off the ground with some serious attitude.
 
 ### Out of the Box
